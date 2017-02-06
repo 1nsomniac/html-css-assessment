@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+.page-container {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.image-holder {
+    background: url("img/main-bg.jpeg");
+    width: 100vw;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+
+.hamburger {
+    height: 50px;
+    padding: 15px;
+}
+
+.fbIcon {
+    height: 26px;
+    padding: 22px;
+}
+
+.twitterIcon {
+    height: 60px;
+    padding: 5px;
+}
+
+.desktop {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 29px;
+    font-size: 23px;
+}
+
+.mobile {
+    display: none
+}
+
+.textHolder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+p {
+    font-size: 30px;
+}
+
+p:first-child {
+    font-size: 110px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    max-height: calc(100% - 105px);
+}
+
+.downArrow {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: white;
+    padding: 6px;
+}
+
+@media (max-width: 600px) {
+    .desktop {
+        display: none
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    .social {
+        display: flex;
+    }
+}
